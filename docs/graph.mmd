@@ -1,0 +1,27 @@
+flowchart TD
+    START([START]) --> analyze_question[analyze_question]
+    analyze_question --> retrieve_documents[retrieve_documents]
+    retrieve_documents --> grade_documents[grade_documents]
+    grade_documents -->|documents relevant| summarize_documents[summarize_documents]
+    grade_documents -->|weak evidence and rewrite_count < MAX_REWRITES| rewrite_question[rewrite_question]
+    rewrite_question --> retrieve_documents
+    summarize_documents --> generate_answer[generate_answer]
+    generate_answer --> self_evaluate_answer[self_evaluate_answer]
+    self_evaluate_answer --> save_memory[save_memory]
+    save_memory --> END([END])
+
+    state[(InsuranceRAGState)]
+    memory[(MemorySaver + Streamlit session memory)]
+    chroma[(ChromaDB vector store)]
+    tools[(Retriever / Grader / Rewriter / Summarizer / Evaluator)]
+
+    state -. shared state .- analyze_question
+    state -. shared state .- retrieve_documents
+    state -. shared state .- grade_documents
+    state -. shared state .- generate_answer
+    retrieve_documents -. query .-> chroma
+    grade_documents -. tool .-> tools
+    rewrite_question -. tool .-> tools
+    summarize_documents -. tool .-> tools
+    self_evaluate_answer -. tool .-> tools
+    save_memory -. updates .-> memory

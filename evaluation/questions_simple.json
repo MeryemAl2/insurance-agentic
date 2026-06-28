@@ -1,0 +1,13 @@
+[
+  {"id": "s1", "question": "What documents are usually needed to file a motor insurance claim?"},
+  {"id": "s2", "question": "Does health insurance normally cover emergency hospitalization?"},
+  {"id": "s3", "question": "What is a home insurance deductible?"},
+  {"id": "s4", "question": "How do I report a car accident to my insurer?"},
+  {"id": "s5", "question": "What is a policy exclusion?"},
+  {"id": "s6", "question": "Can I cancel an insurance policy?"},
+  {"id": "s7", "question": "What does third-party motor insurance cover?"},
+  {"id": "s8", "question": "What is a waiting period in health insurance?"},
+  {"id": "s9", "question": "What should I do after water damage at home?"},
+  {"id": "s10", "question": "What information is on an insurance claim form?"}
+]
+

@@ -1,0 +1,226 @@
+{
+  "simple": [
+    {
+      "id": "s1",
+      "question": "What documents are usually needed to file a motor insurance claim?",
+      "answer": "Test answer for: What documents are usually needed to file a motor insurance claim?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\motor\\motor_claims_sample.txt Motor insurance sample Comprehensive motor insurance may cover accidental damage to the insured vehicle, theft, fire, and third-party liability, subject to the policy wording. After a road accident, the policyholder should make the scene safe, call emergency services if anyone is injured, exchange details with the other driver, take photos, and notify the insurer as soon as possible. Common motor claim documents include the claim form, policy number, driver license, vehicle registration, accident photos, police report where required, repair estimate, and contact details of third parties or witnesses. Exclusions may apply when the vehicle is used outside the permitted use, when the driver is unlicensed, when the driver is impaired, or when the loss is intentional. [1] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\faq\\insurance_faq_sample.txt Insurance FAQ sample An exclusion is policy wording that removes cover for specific events, causes, property, people, or uses.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 1.3007120999973267,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s2",
+      "question": "Does health insurance normally cover emergency hospitalization?",
+      "answer": "Test answer for: Does health insurance normally cover emergency hospitalization?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\health\\health_policy_sample.txt Health insurance sample Health insurance may cover eligible hospitalization, emergency treatment, surgery, diagnostic tests, and prescribed medicines according to the plan benefits. Many health policies contain waiting periods. A waiting period is a time after policy start when selected benefits are not yet payable. Pre-existing condition clauses can restrict cover for illnesses, injuries, or symptoms that existed before the policy start date. The exact definition depends on the policy wording.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.0543838000157848,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s3",
+      "question": "What is a home insurance deductible?",
+      "answer": "Test answer for: What is a home insurance deductible?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both. Covered events often include fire, storm, theft, escape of water, and accidental damage if included in the policy. After water damage, the policyholder should stop the water source if safe, protect undamaged property, take photos, keep damaged items for inspection, and notify the insurer promptly. A deductible is the amount the policyholder pays before the insurer contributes to a covered claim. Depreciation, deductibles, and policy limits can all reduce the final payout.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.06248570000752807,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s4",
+      "question": "How do I report a car accident to my insurer?",
+      "answer": "Test answer for: How do I report a car accident to my insurer?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\motor\\motor_claims_sample.txt Motor insurance sample Comprehensive motor insurance may cover accidental damage to the insured vehicle, theft, fire, and third-party liability, subject to the policy wording. After a road accident, the policyholder should make the scene safe, call emergency services if anyone is injured, exchange details with the other driver, take photos, and notify the insurer as soon as possible. Common motor claim documents include the claim form, policy number, driver license, vehicle registration, accident photos, police report where required, repair estimate, and contact details of third parties or witnesses. Exclusions may apply when the vehicle is used outside the permitted use, when the driver is unlicensed, when the driver is impaired, or when the loss is intentional. [1] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.053754699998535216,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s5",
+      "question": "What is a policy exclusion?",
+      "answer": "Test answer for: What is a policy exclusion?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\faq\\insurance_faq_sample.txt Insurance FAQ sample An exclusion is policy wording that removes cover for specific events, causes, property, people, or uses. Third-party motor insurance generally covers legal liability to others for injury or property damage. It usually does not pay for damage to the policyholder's own vehicle. Policy cancellation rules depend on the contract and local regulation. A customer may need to give written notice, and refunds may be prorated or reduced by fees.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.054217000026255846,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s6",
+      "question": "Can I cancel an insurance policy?",
+      "answer": "Test answer for: Can I cancel an insurance policy?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\faq\\insurance_faq_sample.txt Insurance FAQ sample An exclusion is policy wording that removes cover for specific events, causes, property, people, or uses. Third-party motor insurance generally covers legal liability to others for injury or property damage. It usually does not pay for damage to the policyholder's own vehicle. Policy cancellation rules depend on the contract and local regulation. A customer may need to give written notice, and refunds may be prorated or reduced by fees.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.057280899956822395,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s7",
+      "question": "What does third-party motor insurance cover?",
+      "answer": "Test answer for: What does third-party motor insurance cover?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\faq\\insurance_faq_sample.txt Insurance FAQ sample An exclusion is policy wording that removes cover for specific events, causes, property, people, or uses. Third-party motor insurance generally covers legal liability to others for injury or property damage. It usually does not pay for damage to the policyholder's own vehicle. Policy cancellation rules depend on the contract and local regulation. A customer may need to give written notice, and refunds may be prorated or reduced by fees.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.058426199946552515,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s8",
+      "question": "What is a waiting period in health insurance?",
+      "answer": "Test answer for: What is a waiting period in health insurance?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\health\\health_policy_sample.txt Health insurance sample Health insurance may cover eligible hospitalization, emergency treatment, surgery, diagnostic tests, and prescribed medicines according to the plan benefits. Many health policies contain waiting periods. A waiting period is a time after policy start when selected benefits are not yet payable. Pre-existing condition clauses can restrict cover for illnesses, injuries, or symptoms that existed before the policy start date. The exact definition depends on the policy wording.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.057990700006484985,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s9",
+      "question": "What should I do after water damage at home?",
+      "answer": "Test answer for: What should I do after water damage at home?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both. Covered events often include fire, storm, theft, escape of water, and accidental damage if included in the policy. After water damage, the policyholder should stop the water source if safe, protect undamaged property, take photos, keep damaged items for inspection, and notify the insurer promptly. A deductible is the amount the policyholder pays before the insurer contributes to a covered claim. Depreciation, deductibles, and policy limits can all reduce the final payout.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.054559400072321296,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "s10",
+      "question": "What information is on an insurance claim form?",
+      "answer": "Test answer for: What information is on an insurance claim form?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer. The notice should include the policy number, date of loss, location, description of the event, parties involved, and immediate steps taken. The insurer may request a completed claim form, proof of loss, invoices, photographs, police report, repair estimates, medical records, or other supporting documents. If a claim is denied, the policyholder should request the denial reason in writing, compare it with the policy wording, gather missing evidence, and submit an appeal or complaint before any deadline. Claim decisions depend on coverage grants, exclusions, conditions, limits, deductibles, and whether the policyholder met notification and cooperation duties.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.05521350004710257,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    }
+  ],
+  "complex": [
+    {
+      "id": "c1",
+      "question": "If my car was damaged while being used for paid delivery work, how should I determine whether my motor policy covers the claim?",
+      "answer": "Test answer for: If my car was damaged while being used for paid delivery work, how should I determine whether my motor policy covers the claim?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\motor\\motor_claims_sample.txt Motor insurance sample Comprehensive motor insurance may cover accidental damage to the insured vehicle, theft, fire, and third-party liability, subject to the policy wording. After a road accident, the policyholder should make the scene safe, call emergency services if anyone is injured, exchange details with the other driver, take photos, and notify the insurer as soon as possible. Common motor claim documents include the claim form, policy number, driver license, vehicle registration, accident photos, police report where required, repair estimate, and contact details of third parties or witnesses. Exclusions may apply when the vehicle is used outside the permitted use, when the driver is unlicensed, when the driver is impaired, or when the loss is intentional. [1] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.05300700000952929,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c2",
+      "question": "A patient had symptoms before buying health insurance but was diagnosed after the policy started. What policy clauses should be checked?",
+      "answer": "Test answer for: A patient had symptoms before buying health insurance but was diagnosed after the policy started. What policy clauses should be checked?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\health\\health_policy_sample.txt Health insurance sample Health insurance may cover eligible hospitalization, emergency treatment, surgery, diagnostic tests, and prescribed medicines according to the plan benefits. Many health policies contain waiting periods. A waiting period is a time after policy start when selected benefits are not yet payable. Pre-existing condition clauses can restrict cover for illnesses, injuries, or symptoms that existed before the policy start date. The exact definition depends on the policy wording.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.05421589990146458,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c3",
+      "question": "If a home suffers storm damage and later develops mold, what evidence and exclusions matter for the claim?",
+      "answer": "Test answer for: If a home suffers storm damage and later develops mold, what evidence and exclusions matter for the claim?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both. Covered events often include fire, storm, theft, escape of water, and accidental damage if included in the policy. After water damage, the policyholder should stop the water source if safe, protect undamaged property, take photos, keep damaged items for inspection, and notify the insurer promptly. A deductible is the amount the policyholder pays before the insurer contributes to a covered claim. Depreciation, deductibles, and policy limits can all reduce the final payout.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.061909500043839216,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c4",
+      "question": "How should an insurer assess a motor claim where the driver had an expired license and the vehicle still had comprehensive cover?",
+      "answer": "Test answer for: How should an insurer assess a motor claim where the driver had an expired license and the vehicle still had comprehensive cover?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\motor\\motor_claims_sample.txt Motor insurance sample Comprehensive motor insurance may cover accidental damage to the insured vehicle, theft, fire, and third-party liability, subject to the policy wording. After a road accident, the policyholder should make the scene safe, call emergency services if anyone is injured, exchange details with the other driver, take photos, and notify the insurer as soon as possible. Common motor claim documents include the claim form, policy number, driver license, vehicle registration, accident photos, police report where required, repair estimate, and contact details of third parties or witnesses. Exclusions may apply when the vehicle is used outside the permitted use, when the driver is unlicensed, when the driver is impaired, or when the loss is intentional. [1] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.06462229997850955,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c5",
+      "question": "What steps should a policyholder take if a health claim is rejected for missing pre-authorization?",
+      "answer": "Test answer for: What steps should a policyholder take if a health claim is rejected for missing pre-authorization?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer. The notice should include the policy number, date of loss, location, description of the event, parties involved, and immediate steps taken. The insurer may request a completed claim form, proof of loss, invoices, photographs, police report, repair estimates, medical records, or other supporting documents. If a claim is denied, the policyholder should request the denial reason in writing, compare it with the policy wording, gather missing evidence, and submit an appeal or complaint before any deadline. Claim decisions depend on coverage grants, exclusions, conditions, limits, deductibles, and whether the policyholder met notification and cooperation duties.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.0679855999769643,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c6",
+      "question": "Compare claim notification duties across motor accident claims and home theft claims.",
+      "answer": "Test answer for: Compare claim notification duties across motor accident claims and home theft claims.\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer. The notice should include the policy number, date of loss, location, description of the event, parties involved, and immediate steps taken. The insurer may request a completed claim form, proof of loss, invoices, photographs, police report, repair estimates, medical records, or other supporting documents. If a claim is denied, the policyholder should request the denial reason in writing, compare it with the policy wording, gather missing evidence, and submit an appeal or complaint before any deadline. Claim decisions depend on coverage grants, exclusions, conditions, limits, deductibles, and whether the policyholder met notification and cooperation duties.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.05412119999527931,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c7",
+      "question": "What regulatory or policy constraints might apply when an insurer changes renewal terms after several claims?",
+      "answer": "Test answer for: What regulatory or policy constraints might apply when an insurer changes renewal terms after several claims?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\regulations\\regulatory_sample.txt Insurance regulation sample Insurers should handle claims fairly, communicate material reasons for claim decisions, and provide complaint or appeal routes where required by applicable regulation. Renewal terms may change based on underwriting rules, claim history, regulatory limits, and notice requirements. The insurer should disclose important changes before renewal where required. Policyholders should read notices carefully and compare revised deductibles, limits, exclusions, premiums, and covered uses before accepting renewal. [1] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.055999500094912946,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c8",
+      "question": "If a home policy covers contents but jewelry was stolen outside the home, what wording should be reviewed?",
+      "answer": "Test answer for: If a home policy covers contents but jewelry was stolen outside the home, what wording should be reviewed?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both. Covered events often include fire, storm, theft, escape of water, and accidental damage if included in the policy. After water damage, the policyholder should stop the water source if safe, protect undamaged property, take photos, keep damaged items for inspection, and notify the insurer promptly. A deductible is the amount the policyholder pays before the insurer contributes to a covered claim. Depreciation, deductibles, and policy limits can all reduce the final payout.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.06183030002284795,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c9",
+      "question": "When can depreciation, deductibles, and policy limits all reduce a home insurance payout?",
+      "answer": "Test answer for: When can depreciation, deductibles, and policy limits all reduce a home insurance payout?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\home\\home_claims_sample.txt Home insurance sample Home insurance may cover buildings, contents, or both. Covered events often include fire, storm, theft, escape of water, and accidental damage if included in the policy. After water damage, the policyholder should stop the water source if safe, protect undamaged property, take photos, keep damaged items for inspection, and notify the insurer promptly. A deductible is the amount the policyholder pays before the insurer contributes to a covered claim. Depreciation, deductibles, and policy limits can all reduce the final payout.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.06441669992636889,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    },
+    {
+      "id": "c10",
+      "question": "How should a customer prepare an appeal for a denied claim when the insurer says the loss is excluded?",
+      "answer": "Test answer for: How should a customer prepare an appeal for a denied claim when the insurer says the loss is excluded?\n\nBased on the retrieved sample documents: [0] C:\\Users\\hp\\Documents\\AiAgent\\insurance-agentic-rag\\data\\claims\\claims_procedure_sample.txt Claims procedure sample A claim normally starts with notification to the insurer. The notice should include the policy number, date of loss, location, description of the event, parties involved, and immediate steps taken. The insurer may request a completed claim form, proof of loss, invoices, photographs, police report, repair estimates, medical records, or other supporting documents. If a claim is denied, the policyholder should request the denial reason in writing, compare it with the policy wording, gather missing evidence, and submit an appeal or complaint before any deadline. Claim decisions depend on coverage grants, exclusions, conditions, limits, deductibles, and whether the policyholder met notification and cooperation duties.\n\nFor a real decision, check the exact policy wording, exclusions, limits, and claim conditions.",
+      "answer_quality": 0.7,
+      "groundedness": 0.7,
+      "completeness": 0.6,
+      "response_time_seconds": 0.058080899994820356,
+      "retrieved_document_relevance": 0.75,
+      "source_count": 6
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-label="LangGraph architecture for the Insurance Agentic RAG project">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .node { fill: #ffffff; stroke: #1f2937; stroke-width: 2; rx: 8; }
+      .terminal { fill: #ecfeff; stroke: #0f766e; stroke-width: 2; }
+      .decision { fill: #fff7ed; stroke: #c2410c; stroke-width: 2; }
+      .store { fill: #eef2ff; stroke: #4338ca; stroke-width: 2; }
+      .tool { fill: #f0fdf4; stroke: #15803d; stroke-width: 2; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #374151; text-anchor: middle; dominant-baseline: middle; }
+      .edge { stroke: #1f2937; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .dashed { stroke-dasharray: 6 6; stroke: #64748b; }
+    </style>
+  </defs>
+
+  <text x="590" y="36" class="label" style="font-size:24px;font-weight:700">Insurance Agentic RAG - LangGraph Flow</text>
+
+  <rect x="500" y="65" width="180" height="54" class="terminal"/>
+  <text x="590" y="92" class="label">START</text>
+
+  <rect x="465" y="150" width="250" height="54" class="node"/>
+  <text x="590" y="177" class="label">analyze_question</text>
+
+  <rect x="465" y="235" width="250" height="54" class="node"/>
+  <text x="590" y="262" class="label">retrieve_documents</text>
+
+  <rect x="465" y="320" width="250" height="54" class="decision"/>
+  <text x="590" y="347" class="label">grade_documents</text>
+
+  <rect x="130" y="320" width="250" height="54" class="node"/>
+  <text x="255" y="347" class="label">rewrite_question</text>
+
+  <rect x="465" y="430" width="250" height="54" class="node"/>
+  <text x="590" y="457" class="label">summarize_documents</text>
+
+  <rect x="465" y="515" width="250" height="54" class="node"/>
+  <text x="590" y="542" class="label">generate_answer</text>
+
+  <rect x="465" y="600" width="250" height="54" class="node"/>
+  <text x="590" y="627" class="label">self_evaluate_answer</text>
+
+  <rect x="465" y="685" width="250" height="54" class="node"/>
+  <text x="590" y="712" class="label">save_memory / END</text>
+
+  <path d="M590 119 L590 150" class="edge"/>
+  <path d="M590 204 L590 235" class="edge"/>
+  <path d="M590 289 L590 320" class="edge"/>
+  <path d="M590 374 L590 430" class="edge"/>
+  <path d="M590 484 L590 515" class="edge"/>
+  <path d="M590 569 L590 600" class="edge"/>
+  <path d="M590 654 L590 685" class="edge"/>
+  <path d="M465 347 L380 347" class="edge"/>
+  <path d="M255 320 C255 245 410 245 465 262" class="edge"/>
+
+  <text x="410" y="333" class="small">weak evidence</text>
+  <text x="704" y="402" class="small">relevant evidence</text>
+
+  <rect x="790" y="235" width="250" height="70" class="store"/>
+  <text x="915" y="260" class="label">ChromaDB</text>
+  <text x="915" y="284" class="small">vectorized document chunks</text>
+  <path d="M715 262 L790 270" class="edge dashed"/>
+
+  <rect x="790" y="388" width="250" height="105" class="tool"/>
+  <text x="915" y="415" class="label">Tools</text>
+  <text x="915" y="441" class="small">retriever, grader, rewriter</text>
+  <text x="915" y="465" class="small">summarizer, evaluator</text>
+  <path d="M715 347 L790 425" class="edge dashed"/>
+  <path d="M715 457 L790 455" class="edge dashed"/>
+  <path d="M715 627 L825 493" class="edge dashed"/>
+
+  <rect x="100" y="560" width="250" height="85" class="store"/>
+  <text x="225" y="588" class="label">InsuranceRAGState</text>
+  <text x="225" y="614" class="small">question, docs, scores, answer</text>
+  <path d="M350 602 L465 542" class="edge dashed"/>
+
+  <rect x="100" y="670" width="250" height="62" class="store"/>
+  <text x="225" y="696" class="label">Memory</text>
+  <text x="225" y="717" class="small">MemorySaver + Streamlit state</text>
+  <path d="M465 712 L350 703" class="edge dashed"/>
+</svg>

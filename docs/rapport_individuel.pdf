@@ -1,0 +1,263 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 2660 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+(Rapport Individuel - Insurance Agentic RAG) Tj
+T*
+() Tj
+T*
+(1. Objectif et domaine) Tj
+T*
+() Tj
+T*
+(Ce projet implemente un systeme Agentic RAG dans le domaine de l'assurance. L'objectif est) Tj
+T*
+(de repondre a des questions sur les contrats, les sinistres, les exclusions, les procedures) Tj
+T*
+(de reclamation et certaines contraintes reglementaires. Le systeme s'appuie sur une base) Tj
+T*
+(documentaire locale et sur une architecture LangGraph construite manuellement, sans utiliser) Tj
+T*
+(create_agent de LangChain.) Tj
+T*
+() Tj
+T*
+(2. Construction de la base documentaire) Tj
+T*
+() Tj
+T*
+(La base documentaire est organisee dans le dossier data/ par categorie : automobile, sante,) Tj
+T*
+(habitation, procedures de sinistre, FAQ et reglementation. Le script vectorstore/ingest.py) Tj
+T*
+(lit les fichiers .txt, .md et .pdf, extrait le texte, puis le decoupe en chunks de 1200) Tj
+T*
+(caracteres avec un chevauchement de 180 caracteres. Chaque chunk est stocke dans ChromaDB) Tj
+T*
+(avec des metadonnees : source, categorie et numero du chunk.) Tj
+T*
+() Tj
+T*
+(La vectorisation est configuree dans tools/retriever.py. Le projet supporte trois modes) Tj
+T*
+(d'embedding : hash pour les tests locaux sans API, openai pour une meilleure qualite) Tj
+T*
+(semantique, et sentence_transformers pour un modele local. ChromaDB est persiste dans) Tj
+T*
+(vectorstore/chroma_db.) Tj
+T*
+() Tj
+T*
+(3. Modeles LLM et outils) Tj
+T*
+() Tj
+T*
+(Le module tools/llm.py centralise les appels aux modeles. Il supporte un mode mock pour les) Tj
+T*
+(tests, OpenAI, Gemini, xAI/Grok et Ollama. Les outils principaux sont :) Tj
+T*
+() Tj
+T*
+(- retriever.py : recherche vectorielle dans ChromaDB avec bonus par categorie.) Tj
+T*
+(- grader.py : evaluation de la pertinence des documents recuperes.) Tj
+T*
+(- rewrite.py : reformulation de la question si les documents sont faibles.) Tj
+T*
+(- summarizer.py : synthese des passages utiles avant generation.) Tj
+T*
+(- evaluator.py : auto-evaluation de la reponse selon qualite, ancrage documentaire et) Tj
+T*
+(completude.) Tj
+T*
+() Tj
+T*
+(Ces outils donnent au systeme un comportement agentique : il ne se limite pas a recuperer) Tj
+T*
+(des documents, il decide si la preuve est suffisante, reformule au besoin, puis evalue sa) Tj
+T*
+(propre reponse.) Tj
+T*
+() Tj
+T*
+(4. Architecture LangGraph, state et memoire) Tj
+T*
+() Tj
+T*
+(Le graphe est defini dans graph/graph.py avec StateGraph. Les noeuds sont :) Tj
+T*
+(analyze_question, retrieve_documents, grade_documents, rewrite_question,) Tj
+T*
+(summarize_documents, generate_answer, self_evaluate_answer et save_memory. Une transition) Tj
+T*
+(Page 1) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2487 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+(conditionnelle apres grade_documents envoie le flux soit vers la synthese, soit vers la) Tj
+T*
+(reformulation lorsque le score de pertinence est insuffisant.) Tj
+T*
+() Tj
+T*
+(Le state est decrit dans graph/state.py. Il contient la question, l'analyse, les documents,) Tj
+T*
+(les scores de pertinence, la synthese, la reponse, l'evaluation, le compteur de) Tj
+T*
+(reformulation, la memoire et le temps de reponse. La memoire est geree avec MemorySaver dans) Tj
+T*
+(LangGraph et avec st.session_state dans l'interface Streamlit.) Tj
+T*
+() Tj
+T*
+(La visualisation du graphe est disponible dans docs/graph.svg et sa version Mermaid dans) Tj
+T*
+(docs/graph.mmd.) Tj
+T*
+() Tj
+T*
+(5. Interface et simulation) Tj
+T*
+() Tj
+T*
+(L'application Streamlit app.py permet de poser une question, d'afficher la reponse et) Tj
+T*
+(d'ouvrir une section Trace. Cette trace expose l'analyse de la question, la reformulation) Tj
+T*
+(eventuelle, le score de pertinence, l'evaluation de la reponse, le temps de reponse et les) Tj
+T*
+(sources recuperees.) Tj
+T*
+() Tj
+T*
+(Pour la simulation, deux exemples sont recommandes :) Tj
+T*
+() Tj
+T*
+(- Question simple : "What documents are usually needed to file a motor insurance claim?") Tj
+T*
+(- Question complexe : "If my car was damaged while being used for paid delivery work, how) Tj
+T*
+(should I determine whether my motor policy covers the claim?") Tj
+T*
+() Tj
+T*
+(6. Evaluation) Tj
+T*
+() Tj
+T*
+(Le script evaluation/evaluate.py teste le systeme sur 10 questions simples et 10 questions) Tj
+T*
+(complexes. Pour chaque question, il enregistre la reponse, la qualite estimee, le score) Tj
+T*
+(d'ancrage documentaire, la completude, le temps de reponse, la pertinence moyenne des) Tj
+T*
+(documents recuperes et le nombre de sources.) Tj
+T*
+() Tj
+T*
+(Lors d'un test local en mode mock, les moyennes obtenues etaient :) Tj
+T*
+() Tj
+T*
+(   Suite    Questions    Qualite moyenne    Temps moyen    Pertinence documents) Tj
+T*
+(  ---  ---:  ---:  ---:  ---:) Tj
+T*
+(   Simple    10    0.70    0.22 s    0.75) Tj
+T*
+(   Complexe    10    0.70    0.06 s    0.75) Tj
+T*
+() Tj
+T*
+(Ces resultats valident le fonctionnement technique complet. Pour une evaluation finale, il) Tj
+T*
+(est preferable de relancer le script avec un vrai LLM et, si possible, des embeddings) Tj
+T*
+(semantiques \(openai ou sentence_transformers\) afin d'obtenir une analyse plus fiable.) Tj
+T*
+() Tj
+T*
+(7. Limites et pistes d'amelioration) Tj
+T*
+() Tj
+T*
+(Page 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 769 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+(La base documentaire actuelle est volontairement courte et sert surtout a demontrer) Tj
+T*
+(l'architecture. La qualite des reponses depend fortement du fournisseur LLM et du mode) Tj
+T*
+(d'embedding choisi. Le mode hash est utile pour les tests, mais il reste moins pertinent) Tj
+T*
+(qu'un modele d'embedding semantique.) Tj
+T*
+() Tj
+T*
+(Les ameliorations possibles sont : enrichir la base documentaire avec des contrats reels) Tj
+T*
+(anonymises, ajouter un reranker, conserver une memoire conversationnelle plus structuree,) Tj
+T*
+(ajouter des tests unitaires pour les noeuds du graphe, comparer plusieurs modeles LLM, et) Tj
+T*
+(produire une evaluation humaine des reponses en plus de l'auto-evaluation automatique.) Tj
+T*
+(Page 3) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000002909 00000 n 
+0000003035 00000 n 
+0000005574 00000 n 
+0000005700 00000 n 
+0000006520 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+6646
+%%EOF

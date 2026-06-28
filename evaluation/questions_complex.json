@@ -1,0 +1,13 @@
+[
+  {"id": "c1", "question": "If my car was damaged while being used for paid delivery work, how should I determine whether my motor policy covers the claim?"},
+  {"id": "c2", "question": "A patient had symptoms before buying health insurance but was diagnosed after the policy started. What policy clauses should be checked?"},
+  {"id": "c3", "question": "If a home suffers storm damage and later develops mold, what evidence and exclusions matter for the claim?"},
+  {"id": "c4", "question": "How should an insurer assess a motor claim where the driver had an expired license and the vehicle still had comprehensive cover?"},
+  {"id": "c5", "question": "What steps should a policyholder take if a health claim is rejected for missing pre-authorization?"},
+  {"id": "c6", "question": "Compare claim notification duties across motor accident claims and home theft claims."},
+  {"id": "c7", "question": "What regulatory or policy constraints might apply when an insurer changes renewal terms after several claims?"},
+  {"id": "c8", "question": "If a home policy covers contents but jewelry was stolen outside the home, what wording should be reviewed?"},
+  {"id": "c9", "question": "When can depreciation, deductibles, and policy limits all reduce a home insurance payout?"},
+  {"id": "c10", "question": "How should a customer prepare an appeal for a denied claim when the insurer says the loss is excluded?"}
+]
+

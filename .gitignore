@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+evaluation/results/*
+!evaluation/results/.gitkeep
+!evaluation/results/latest_results.json
+vectorstore/chroma_db/*
+!vectorstore/chroma_db/.gitkeep
